@@ -1,0 +1,607 @@
+module Base
+{
+	model XM93Woodland
+	{
+		mesh = vehicles/Vehicle_XM93|body_mesh,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
+		scale = 1,
+	}
+	model XM93W_door_left
+	{
+		mesh = vehicles/Vehicle_XM93|DoorFrontLeft_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model XM93W_door_right
+	{
+		mesh = vehicles/Vehicle_XM93|DoorFrontRight_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model XM93WTrunk
+	{
+		mesh = vehicles/Vehicle_XM93|DoorTrunk_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = BackBoneTop 1.0,
+		boneWeight = BackBoneBottom 1.0,
+	}
+	model XM93frontwheelleft
+	{
+		mesh = vehicles/Vehicle_XM93_Wheel,
+		texture = vehicles/Vehicle_XM93WheelWoodland,
+		shader = vehiclewheel,
+	}
+	model XM93frontwheelright
+	{
+		mesh = vehicles/Vehicle_XM93_Wheel,
+		texture = vehicles/Vehicle_XM93WheelWoodland,
+		shader = vehiclewheel,
+	}
+	model XM93backwheelleft
+	{
+		mesh = vehicles/Vehicle_XM93_WheelFAKE,
+		texture = vehicles/Vehicle_XM93WheelWoodland,
+		shader = vehiclewheel,
+	}
+	model XM93backwheelright
+	{
+		mesh = vehicles/Vehicle_XM93_WheelFAKE,
+		texture = vehicles/Vehicle_XM93WheelWoodland,
+		shader = vehiclewheel,
+	}
+	vehicle XM93Woodland
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 2,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+		engineRPMType = semitruck,
+
+		model
+		{
+			file = XM93Woodland,
+			scale = 0.7800,
+			offset = 0.0128 -0.1026 0.0128,
+		}
+
+		skin
+		{
+			texture = Vehicles/Vehicle_XM93_Woodland,
+		}
+
+		textureRust = Vehicles/Vehicle_XM93rust,
+		textureMask = Vehicles/Vehicle_XM93MASK,
+		textureLights = Vehicles/Vehicle_XM93_lights,
+		textureDamage1Shell = Vehicles/Vehicle_XM93damage,
+		textureDamage2Shell = Vehicles/Vehicle_XM93damage2,
+		textureDamage1Overlay = Vehicles/Vehicle_XM93BLOOD,
+		textureDamage2Overlay = Vehicles/Vehicle_XM93BLOOD,
+
+		sound
+		{
+			engine = VehicleEngineSUV,
+			engineStart = VehicleEngineSUV,
+			engineTurnOff = VehicleEngineSUV,
+			horn = VehicleHornStandard,
+			ignitionFail = VehicleIgnitionFailSUV,
+		}
+
+		extents = 3.5128 3.2564 9.1538,
+		mass = 3700,
+		physicsChassisShape = 3.5128 5.1795 9.1795,
+		centerOfMassOffset = 0.0000 2.0256 0.0000,
+		shadowExtents = 3.7158 9.2002,
+		shadowOffset = 0.0000 -0.0095,
+		engineForce = 3200,
+		engineQuality = 85,
+		engineLoudness = 110,
+		maxSpeed = 65f,
+		gearRatioCount = 5,
+		brakingForce = 60,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.9f,
+		steeringIncrement = 0.039,
+		steeringClamp = 0.3,
+		suspensionStiffness = 45,
+		suspensionCompression = 4.83,
+		suspensionDamping = 3.88,
+		maxSuspensionTravelCm = 10,
+		suspensionRestLength = 0.2f,
+		wheelFriction = 1.0f,
+		frontEndHealth = 1500,
+		rearEndHealth = 1500,
+		isSmallVehicle = false,
+		seats = 4,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 1.4103 0.0128 2.1923,
+			radius = 0.60f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -1.4103 0.0128 2.1923,
+			radius = 0.60f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 0.0256 0.0128 0.1667,
+			radius = 0.60f,
+			width = 2.22f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = 0.0256 0.0128 -2.2436,
+			radius = 0.60f,
+			width = 2.22f,
+		}
+
+		template = PassengerSeat4,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+			position inside
+			{
+				offset = 0.8462 1.0128 2.7949,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.8974 -0.0256 3.3077,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+			position inside
+			{
+				offset = -0.8846 1.0128 2.7949,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.8974 -0.1923 3.2308,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+			position inside
+			{
+				offset = 0.8590 1.2308 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 0.3333 -0.0128 -4.9231,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+
+			switchSeat FrontRight
+			{
+			}
+
+			switchSeat FrontLeft
+			{
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+			position inside
+			{
+				offset = -0.8333 1.2308 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 0.3333 -0.0128 -4.9231,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+
+			switchSeat FrontRight
+			{
+			}
+
+			switchSeat FrontLeft
+			{
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 5.5769 3.5128 2.0000,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 2.7564 3.5769 2.0000 2.0000,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -2.7564 3.5769 2.0000 2.0000,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 0.0000 -5.5769 2.0000 2.0000,
+		}
+
+		area SeatRearRight
+		{
+			xywh = 0.0000 -5.5769 2.0000 2.0000,
+		}
+
+		area GasTank
+		{
+			xywh = -1.7564 -1.4487 0.0000 0.0000,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.0000 3.0000 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.0000 3.0000 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 2.0000 -1.0000 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -2.0000 -1.0000 0.0000 0.0000,
+		}
+
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearRight,
+		template = Seat/part/SeatRearLeft,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearRight,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = XM93W_door_right,
+			}
+
+			anim Close
+			{
+				anim = DoorRightFrontClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = DoorRightFrontClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorRightFrontClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorRightFrontClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = XM93W_door_left,
+			}
+
+			anim Close
+			{
+				anim = DoorLeftFrontClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = DoorLeftFrontClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorLeftFrontClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorLeftFrontClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = XM93WTrunk,
+			}
+
+			anim Close
+			{
+				anim = DoorRearClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = DoorRearClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorRearClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorRearClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part XM93LabContainer
+		{
+			area = SeatMiddleLeft,
+			itemType = Base.XM93LabContainer,
+			specificItem = false,
+
+			container
+			{
+				test = Vehicles.ContainerAccess.XM93LabContainer,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part XM93VehicleInterior
+		{
+			area = SeatMiddleLeft,
+			itemType = Base.XM93VehicleInterior,
+			specificItem = false,
+
+			container
+			{
+				test = Vehicles.ContainerAccess.XM93VehicleInterior,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		template = Tire,
+		template = Axle,
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = XM93frontwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = XM93frontwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = XM93backwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = XM93backwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+
+		part Radio*
+		{
+			itemType = Radio.HamRadio1,
+		}
+
+		template = Headlight,
+		
+		physics box
+		{
+			offset = 0.0000 2.0641 -0.0513,
+			extents = 3.6410 2.2949 8.8846,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.0256 -4.9231,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 0.0000 4.5256,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}
