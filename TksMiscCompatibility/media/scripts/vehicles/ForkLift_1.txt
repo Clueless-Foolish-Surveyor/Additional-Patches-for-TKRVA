@@ -95,7 +95,7 @@ vehicle ForkLift_1
 		brakingForce = 90,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.6f,
-		steeringIncrement = 0.037,
+		steeringIncrement = 0.030,
 		steeringClamp = 1.0,
 		suspensionStiffness = 90,
 		suspensionCompression = 5,
