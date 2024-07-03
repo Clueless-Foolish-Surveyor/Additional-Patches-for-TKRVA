@@ -98,7 +98,7 @@ module Base
 		}
 
 		extents = 2.5111 1.0667 6.6444,
-		mass = 3527,
+		mass = 1425,
 		physicsChassisShape = 2.5111 1.0667 6.6444,
 		centerOfMassOffset = 0.0000 0.2667 0.3778,
 		shadowExtents = 2.5934 6.9674,
@@ -110,7 +110,7 @@ module Base
 		brakingForce = 50,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.25f,
-		steeringIncrement = 0.038,
+		steeringIncrement = 0.034,
 		steeringClamp = 0.25,
 		suspensionStiffness = 75,
 		suspensionCompression = 4.83,

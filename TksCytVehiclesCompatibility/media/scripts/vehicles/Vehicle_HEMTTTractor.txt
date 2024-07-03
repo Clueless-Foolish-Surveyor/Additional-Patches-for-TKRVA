@@ -80,7 +80,7 @@ module Base
 
 		template! = HEMTTtruck,
 		extents = 1.4444 0.9630 5.9877,
-		mass = 3520,
+		mass = 1425,
 		physicsChassisShape = 1.4321 0.9630 5.9753,
 		centerOfMassOffset = 0.0000 0.4938 0.0000,
 		shadowExtents = 1.4936 6.1145,
