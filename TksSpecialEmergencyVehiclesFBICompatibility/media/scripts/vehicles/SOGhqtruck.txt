@@ -12,7 +12,7 @@ module Base
 		mechanicType = 2,
 		engineRepairLevel = 6,
 		playerDamageProtection = 2.5,
-		engineRPMType = lowtruck,
+		engineRPMType = semitruck,
 		offRoadEfficiency = 1.9,
 
 		model
@@ -53,7 +53,7 @@ module Base
 		}
 
 		extents = 1.1351 1.1676 5.8270,
-		mass = 4450,
+		mass = 1425,
 		physicsChassisShape = 1.1351 0.9838 5.8378,
 		centerOfMassOffset = 0.0000 0.5189 0.0000,
 		shadowExtents = 1.1351 5.6270,

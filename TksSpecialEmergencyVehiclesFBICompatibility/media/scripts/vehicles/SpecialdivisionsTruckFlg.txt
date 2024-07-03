@@ -53,7 +53,7 @@ module Base
 		}
 
 		extents = 1.3292 1.4783 5.1677,
-		mass = 2460,
+		mass = 1375,
 		physicsChassisShape = 1.3416 1.1429 4.8696,
 		centerOfMassOffset = 0.0000 0.7826 0.0000,
 		shadowExtents = 1.3001 5.0121,
@@ -579,7 +579,7 @@ module Base
 		}
 
 		extents = 1.3292 1.4783 5.0683,
-		mass = 2600,
+		mass = 1400,
 		physicsChassisShape = 1.3416 1.1429 4.8696,
 		centerOfMassOffset = 0.0000 0.7826 0.0000,
 		shadowExtents = 1.3001 5.0121,
