@@ -42,7 +42,7 @@ module Base
         }
 
         extents = 1.011 0.635 1.88,
-		mass = 2447,
+		mass = 1460,
 		shadowOffset = 0.1 0.1 0.2 0.2,
 		physicsChassisShape = 1.011 0.635 1.88,
 		centerOfMassOffset = 0.0000 0.3022 0.0850,
@@ -53,7 +53,7 @@ module Base
 		maxSpeed = 40f,
 		brakingForce = 40,
 		rollInfluence = 0.5f,
-		steeringIncrement = 0.039,
+		steeringIncrement = 0.028,
 		steeringClamp = 0.15,
 		suspensionStiffness = 200,
 		suspensionCompression = 7.83,
