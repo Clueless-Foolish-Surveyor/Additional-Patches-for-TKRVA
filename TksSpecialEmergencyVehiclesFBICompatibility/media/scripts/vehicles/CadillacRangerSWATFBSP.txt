@@ -67,7 +67,7 @@ module Base
 		gearRatioCount = 3,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 1.0f,
-		steeringIncrement = 0.031,
+		steeringIncrement = 0.032,
 		steeringClamp = 0.3,
 		suspensionStiffness = 40,
 		suspensionCompression = 3.83,
