@@ -65,7 +65,7 @@ module Base
 		maxSpeed = 70f,
 		brakingForce = 70,
 		gearRatioCount = 3,
-		stoppingMovementForce = 4.0f,
+		stoppingMovementForce = 3.0f,
 		rollInfluence = 1.0f,
 		steeringIncrement = 0.032,
 		steeringClamp = 0.3,
