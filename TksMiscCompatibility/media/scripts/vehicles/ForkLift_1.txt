@@ -82,12 +82,12 @@ vehicle ForkLift_1
 		}
 
 		extents = 0.6235 1.1059 1.8588,
-		mass = 500,
+		mass = 886,
 		physicsChassisShape = 0.6235 1.1059 1.8588,
 		centerOfMassOffset = 0.0000 0.5000 0.1824,
 		shadowExtents = 0.5769 1.4691,
 		shadowOffset = 0.0021 -0.0135,
-		engineForce = 540,
+		engineForce = 2540,
 		maxSpeed = 20f,
 		engineLoudness = 40,
 		engineQuality = 80,
@@ -95,7 +95,7 @@ vehicle ForkLift_1
 		brakingForce = 90,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.6f,
-		steeringIncrement = 0.039,
+		steeringIncrement = 0.03,
 		steeringClamp = 1.0,
 		suspensionStiffness = 90,
 		suspensionCompression = 5,

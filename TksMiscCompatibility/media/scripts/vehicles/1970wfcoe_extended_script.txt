@@ -1,0 +1,1571 @@
+module Base
+{
+	model Vehicles_freight_body
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|Body1,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
+		scale = 0.0014,
+	}
+	model wfcoe_first_interior
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|Interior,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+		scale = 0.0014,
+	}
+	model wfcoe_second_interior
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|Frame,
+		texture = Vehicles/Vehicle_WFCOE_Interior2,
+		shader = vehiclewheel,
+		scale = 0.0014,
+	}
+	model wfcoe_under
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|Body2Under,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+		scale = 0.0014,
+	}
+	model wfcoe_cab_extended
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|Body2,
+		shader = vehicle,
+		scale = 0.0014,
+	}
+	model wfcoe_biggastank
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|FuelTank2,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+		scale = 0.0014,
+	}
+	model wfcoe_normalgastank
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|FuelTank1,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+		scale = 0.0014,
+	}
+	model wfcoe_filters2
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|Filter2,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+		scale = 0.0014,
+	}
+	model WFCOE_LeftArmor
+    {
+        mesh = vehicles/Vehicles_1970wfcoe_body|LeftArmor,
+		texture = Vehicles/Vehicle_WFCOE_Armor,
+		shader = vehiclewheel,
+        static = TRUE,
+		scale = 0.0014,
+    }
+	model WFCOE_RightArmor
+    {
+        mesh = vehicles/Vehicles_1970wfcoe_body|RightArmor,
+		texture = Vehicles/Vehicle_WFCOE_Armor,
+		shader = vehiclewheel,
+        static = TRUE,
+		scale = 0.0014,
+    }
+	model WFCOE_RearLeftArmor
+    {
+        mesh = vehicles/Vehicles_1970wfcoe_body|RearLeftArmor,
+		texture = Vehicles/Vehicle_WFCOE_Armor,
+		shader = vehiclewheel,
+        static = TRUE,
+		scale = 0.0014,
+    }
+	model WFCOE_RearRightArmor
+    {
+        mesh = vehicles/Vehicles_1970wfcoe_body|RearRightArmor,
+		texture = Vehicles/Vehicle_WFCOE_Armor,
+		shader = vehiclewheel,
+        static = TRUE,
+		scale = 0.0014,
+    }
+	model WFCOE_Visor1
+    {
+        mesh = vehicles/Vehicles_1970wfcoe_body|Visor1,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+        static = TRUE,
+		scale = 0.0014,
+    }
+	model WFCOE_Visor2
+    {
+        mesh = vehicles/Vehicles_1970wfcoe_body|Visor2,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+        static = TRUE,
+		scale = 0.0014,
+    }
+	model WFCOE_Handrails
+    {
+        mesh = vehicles/Vehicles_1970wfcoe_body|Handrails,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+        static = TRUE,
+		scale = 0.0014,
+    }
+	model WFCOE_Horns
+    {
+        mesh = vehicles/Vehicles_1970wfcoe_body|Horns,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+        static = TRUE,
+		scale = 0.0014,
+    }
+	model WFCOE_Exhaust_1_2
+    {
+        mesh = vehicles/Vehicles_1970wfcoe_body|Exhaust2,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+        static = TRUE,
+		scale = 0.0014,
+    }
+	model WFCOE_Exhaust_Left_2
+    {
+        mesh = vehicles/Vehicles_1970wfcoe_body|LeftExhaust2,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+        static = TRUE,
+		scale = 0.0014,
+    }
+	model WFCOE_Exhaust_Right_2
+    {
+        mesh = vehicles/Vehicles_1970wfcoe_body|RightExhaust2,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+        static = TRUE,
+		scale = 0.0014,
+    }
+	model WFCOE_Fender_Front_1
+    {
+        mesh = vehicles/Vehicles_1970wfcoe_body|FrontFender1,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+        static = TRUE,
+		scale = 0.0014,
+    }
+	model WFCOE_Fender_Front_2
+    {
+        mesh = vehicles/Vehicles_1970wfcoe_body|FrontFender2,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+        static = TRUE,
+		scale = 0.0014,
+    }
+	model WFCOE_Fender_Big
+    {
+        mesh = vehicles/Vehicles_1970wfcoe_body|FrontFender3,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+        static = TRUE,
+		scale = 0.0014,
+    }
+	model WFCOE_Fender_Rear
+    {
+        mesh = vehicles/Vehicles_1970wfcoe_body|RearFender,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+        static = TRUE,
+		scale = 0.0014,
+    }
+	model wfcoe_wheel_front
+	{
+		mesh = vehicles/Vehicles_1970WFCOE_wheel_front,
+		texture = Vehicles/Vehicle_WFCOE_Wheels,
+		shader = vehiclewheel,
+		scale = 3.2,
+	}
+	model wfcoe_wheel_rear
+	{
+		mesh = vehicles/Vehicles_1970WFCOE_wheel_rear,
+		texture = Vehicles/Vehicle_WFCOE_Wheels,
+		shader = vehiclewheel,
+		scale = 3.2,
+	}
+	model wfcoe_hood_door
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|Grill,
+		shader = vehicle_norandom_multiuv,
+		static = FALSE,
+		scale = 0.0014,
+	}
+	model wfcoe_trunk_doors
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|TrunkDoors,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.0014,
+	}
+	model wfcoe_left_door
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|LeftDoor,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.0014,
+	}
+	model wfcoe_right_door
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|RightDoor,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.0014,
+	}
+	model wfcoe_fl_window
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|LeftWindow,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.0014,
+	}
+	model wfcoe_fr_window
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|RightWindow,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.0014,
+	}
+	model wfcoe_windshield
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|Windshield,
+		shader = vehicle,
+		scale = 0.0014,
+	}
+	model wfcoe_seat_left
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|Seat1,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+		scale = 0.0014,
+	}
+	model wfcoe_seat_right
+	{
+		mesh = vehicles/Vehicles_1970wfcoe_body|Seat2,
+		texture = Vehicles/Vehicle_WFCOE_Interior1,
+		shader = vehiclewheel,
+		scale = 0.0014,
+	}
+	vehicle 1970whitefreightlinercoeExtended
+	{
+		mechanicType = 2,
+		engineRepairLevel = 7,
+		playerDamageProtection = 4,
+		offRoadEfficiency = 1,
+        engineRPMType = semitruck,
+
+		model
+		{
+			file = Vehicles_freight_body,
+			scale = 2.8000,
+			rotate = 0 0 0,
+			offset = 0.0000 -0.0357 0.1286,
+		}
+
+		part TCLConfig
+		{
+			category = nodisplay,
+
+			table TCLConfig
+			{
+				airbrake = true,
+				trailerOutside = false,
+			}
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.3929 0.7286,
+			extents = 0.7643 0.5000 0.7250,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		part Interior
+		{
+			category = nodisplay,
+
+			model Interior1
+			{
+				file = wfcoe_first_interior,
+				rotate = 0 0 0,
+			}
+
+			model Interior2
+			{
+				file = wfcoe_second_interior,
+				rotate = 0 0 0,
+			}
+
+			model Interior3
+			{
+				file = wfcoe_filters2,
+				rotate = 0 0 0,
+			}
+
+			model Cab
+			{
+				file = wfcoe_cab_extended,
+				rotate = 0 0 0,
+			}
+
+			model Under
+			{
+				file = wfcoe_under,
+				rotate = 0 0 0,
+			}
+
+			lua
+			{
+				init = ATATuning2.Init.setAllModelsVisible,
+			}
+		}
+
+		skin
+		{
+			texture = Vehicles/Vehicle_WFCOE_1,
+		}
+		
+		skin
+		{
+			texture = Vehicles/Vehicle_WFCOE_2,
+		}
+		
+		skin
+		{
+			texture = Vehicles/Vehicle_WFCOE_3,
+		}
+		
+		skin
+		{
+			texture = Vehicles/Vehicle_WFCOE_4,
+		}
+		
+		skin
+		{
+			texture = Vehicles/Vehicle_WFCOE_5,
+		}
+		
+		skin
+		{
+			texture = Vehicles/Vehicle_WFCOE_6,
+		}
+		
+		skin
+		{
+			texture = Vehicles/Vehicle_WFCOE_7,
+		}
+
+		textureMask = Vehicles/Vehicle_WFCOE_Mask,
+		textureLights = Vehicles/Vehicle_WFCOE_Lights,
+		textureDamage1Overlay = Vehicles/Vehicle_WFCOE_Null,
+		textureDamage2Overlay = Vehicles/Vehicle_WFCOE_Null,
+		textureDamage1Shell = Vehicles/Vehicle_WFCOE_Damage1,
+		textureDamage2Shell = Vehicles/Vehicle_WFCOE_Damage2,
+		textureRust = Vehicles/Vehicle_WFCOE_Rust,
+
+		sound
+		{
+			engine = VehicleEngineStepVan,
+			engineStart = VehicleEngineStepVan,
+			engineTurnOff = VehicleEngineStepVan,
+			horn = VehicleHornVan,
+			ignitionFail = VehicleIgnitionFailStepVan,
+		}
+
+		extents = 0.7786 0.3214 2.2214,
+		physicsChassisShape = 0.7786 0.3214 2.2214,
+		centerOfMassOffset = 0.0000 -0.0857 0.0000,
+		shadowExtents = 0.7801 2.4947,
+		shadowOffset = 0.0000 0.0000,
+		mass = 1325,
+		engineForce = 3500,
+		maxSpeed = 60f,
+		engineLoudness = 100,
+		engineQuality = 75,
+		brakingForce = 95,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.2f,
+		steeringIncrement = 0.028,
+		steeringClamp = 0.3,
+		suspensionStiffness = 105,
+		suspensionCompression = 4.83,
+		suspensionDamping = 3.88,
+		maxSuspensionTravelCm = 10,
+		suspensionRestLength = 0.16f,
+		wheelFriction = 1.0f,
+		frontEndHealth = 1250,
+		rearEndHealth = 1250,
+		seats = 4,
+		template = PassengerSeat4,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+
+			position inside
+			{
+				offset = 0.2750 0.3214 0.6036,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 0.2750 0.1786 0.7286,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+
+			position inside
+			{
+				offset = -0.2750 0.3214 0.6036,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -0.2750 0.1786 0.7286,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = false,
+
+			position inside
+			{
+				offset = 0.2750 0.3214 0.2143,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = false,
+
+			position inside
+			{
+				offset = -0.2750 0.3214 0.2143,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+			}
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 0.5286 0.8571 0.2786 0.2857,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -0.5286 0.8571 0.2786 0.2857,
+		}
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 0.3250 -0.0750 0.7143,
+			radius = 0.18f,
+			width = 0.18f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -0.3250 -0.0750 0.7143,
+			radius = 0.18f,
+			width = 0.18f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 0.0000 -0.0750 -0.6071,
+			radius = 0.18f,
+			width = 0.18f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = 0.0000 -0.0750 -1.0214,
+			radius = 0.18f,
+			width = 0.18f,
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 1.2464 0.3357 0.2714,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 0.5071 1.3357 0.3143,
+		}
+
+		area GasTank
+		{
+			xywh = 0.5286 0.0786 0.2786 0.4857,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 0.5286 0.8429 0.2786 0.3571,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -0.5286 0.8429 0.2786 0.3571,
+		}
+
+		area TireMiddleLeft
+		{
+			xywh = 0.5286 -0.8929 0.2786 0.3571,
+		}
+
+		area TireMiddleRight
+		{
+			xywh = -0.5286 -0.8929 0.2786 0.3571,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 0.5286 -0.4786 0.2786 0.3571,
+		}
+
+		area TireRearRight
+		{
+			xywh = -0.5286 -0.4786 0.2786 0.3571,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = wfcoe_trunk_doors,
+				rotate = -90 0 0,
+			}
+
+			anim Close
+			{
+				anim = TrunkDoorOpen,
+				reverse = TRUE,
+				rate = 1.3,
+			}
+
+			anim Open
+			{
+				anim = TrunkDoorOpen,
+				rate = 1,
+			}
+
+			anim Closed
+			{
+				anim = TrunkDoorOpen,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkDoorOpen,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		template = Trunk/part/TruckBed,
+
+		part TruckBed
+		{
+			itemType = Base.SmallTrunk,
+
+			container
+			{
+				capacity = 15,
+			}
+		}
+
+		template = Seat/part/SeatFrontLeft,
+
+		part SeatFrontLeft
+		{
+			model DefaultSeat
+			{
+				file = wfcoe_seat_left,
+				rotate = 0 0 0,
+			}
+		}
+
+		template = Seat/part/SeatFrontRight,
+
+		part SeatFrontRight
+		{
+			model DefaultSeat2
+			{
+				file = wfcoe_seat_right,
+				rotate = 0 0 0,
+			}
+		}
+
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+
+		part Seat*
+		{
+			table install
+			{
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:2,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = GloveBox,
+
+		part GloveBox
+		{
+			area = SeatFrontRight,
+			itemType = Base.GloveBox,
+			mechanicRequireKey = true,
+
+			container
+			{
+				capacity = 7,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		template = GasTank,
+
+		part GasTank*
+		{
+			itemType = Base.NormalGasTank;Base.BigGasTank,
+
+			model NormalGasTankModel
+			{
+				file = wfcoe_normalgastank,
+				rotate = 0 0 0,
+			}
+
+			model BigGasTankModel
+			{
+				file = wfcoe_biggastank,
+				rotate = 0 0 0,
+			}
+
+			table ATA2ItemToModel
+			{
+				Another = NormalGasTankModel,
+				BigGasTank2 = BigGasTankModel,
+			}
+
+			table install
+			{
+				skills = Mechanics:7,
+				recipes = Intermediate Mechanics,
+				complete = ATATuning.InstallComplete.DefaultModel,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:7,
+				recipes = Intermediate Mechanics,
+				complete = ATATuning.UninstallComplete.DefaultModel,
+			}
+
+			lua
+			{
+				create = ATATuning2.Create.DefaultModel,
+				init = ATATuning2.Init.DefaultModel,
+			}
+		}
+
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = wfcoe_hood_door,
+				rotate = -90 0 0,
+			}
+
+			anim Close
+			{
+				anim = HoodOpen,
+				reverse = TRUE,
+				sound = VehicleDoorOpenStandard,
+				rate = 1,
+			}
+
+			anim Open
+			{
+				anim = HoodOpen,
+				rate = 1,
+			}
+
+			anim Closed
+			{
+				anim = HoodOpen,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodOpen,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+
+		part Windshield
+		{
+			category = bodywork,
+
+			model Default
+			{
+				file = wfcoe_windshield,
+				rotate = 0 0 0,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Window/part/WindowFrontLeft,
+
+		part WindowFrontLeft
+		{
+			parent = DoorFrontLeft,
+			category = door,
+
+			model Default
+			{
+				file = wfcoe_fl_window,
+				rotate = -90 0 0,
+			}
+		}
+
+		template = Window/part/WindowFrontRight,
+
+		part WindowFrontRight
+		{
+			parent = DoorFrontRight,
+			category = door,
+
+			model Default
+			{
+				file = wfcoe_fr_window,
+				rotate = -90 0 0,
+			}
+		}
+
+		part Window*
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+
+		part Door*
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		part DoorFrontLeft
+		{
+			category = door,
+
+			model Default
+			{
+				file = wfcoe_left_door,
+				rotate = -90 0 0,
+			}
+
+			anim Close
+			{
+				anim = LeftDoorOpen,
+				reverse = TRUE,
+				rate = 1.5,
+				sound = VehicleDoorCloseVan,
+			}
+
+			anim Open
+			{
+				anim = LeftDoorOpen,
+				rate = 1.5,
+				sound = VehicleDoorOpenVan,
+			}
+
+			anim Closed
+			{
+				anim = LeftDoorOpen,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = LeftDoorOpen,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table uninstall
+			{
+				requireUninstalled = WindowFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			category = door,
+
+			model Default
+			{
+				file = wfcoe_right_door,
+				rotate = -90 0 0,
+			}
+
+			anim Close
+			{
+				anim = RightDoorOpen,
+				reverse = TRUE,
+				rate = 1.5,
+				sound = VehicleDoorCloseVan,
+			}
+
+			anim Open
+			{
+				anim = RightDoorOpen,
+				rate = 1.5,
+				sound = VehicleDoorOpenVan,
+			}
+
+			anim Closed
+			{
+				anim = RightDoorOpen,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RightDoorOpen,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table uninstall
+			{
+				requireUninstalled = WindowFrontRight,
+			}
+		}
+
+		template = Tire/part/TireFrontLeft,
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = wfcoe_wheel_front,
+			}
+		}
+
+		template = Tire/part/TireFrontRight,
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = wfcoe_wheel_front,
+			}
+		}
+
+		template = Tire/part/TireRearLeft,
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = wfcoe_wheel_rear,
+				offset = 0.3 0.0 0.0,
+			}
+		}
+
+		template = Tire/part/TireRearRight,
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = wfcoe_wheel_rear,
+				offset = -0.3 0.0 0.0,
+			}
+		}
+
+		template = ATA6Wheels/part/TireMiddleLeft,
+
+		part TireMiddleLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = wfcoe_wheel_rear,
+				offset = 0.3 0.0 0.0,
+			}
+		}
+
+		template = ATA6Wheels/part/TireMiddleRight,
+
+		part TireMiddleRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = wfcoe_wheel_rear,
+				offset = -0.3 0.0 0.0,
+			}
+		}
+
+		part TireFront*
+		{
+			setAllModelsVisible = false,
+
+			table install
+			{
+				complete = ATATuning2.InstallComplete.TireNotAllModelsVisible,
+			}
+
+			table uninstall
+			{
+				complete = ATATuning2.UninstallComplete.TireNotAllModelsVisible,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Tire,
+				init = ATATuning2.Init.TireNotAllModelsVisible,
+				checkOperate = Vehicles.CheckOperate.Tire,
+				update = Vehicles.Update.Tire,
+			}
+		}
+
+		template = Brake/part/BrakeFrontLeft,
+		template = Brake/part/BrakeFrontRight,
+		template = Brake/part/BrakeRearLeft,
+		template = Brake/part/BrakeRearRight,
+		template = ATA6Wheels/part/BrakeMiddleLeft,
+		template = ATA6Wheels/part/BrakeMiddleRight,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:6,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:6,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension/part/SuspensionFrontLeft,
+		template = Suspension/part/SuspensionFrontRight,
+		template = Suspension/part/SuspensionRearLeft,
+		template = Suspension/part/SuspensionRearRight,
+		template = ATA6Wheels/part/SuspensionMiddleLeft,
+		template = ATA6Wheels/part/SuspensionMiddleRight,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:6,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:6,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+		template = Headlight,
+		template! = WFCOEBumpers,
+		template! = WFCOEProtection,
+
+		part WFCOEExhaustFirst2
+		{
+			model ExhaustFirstModel2
+			{
+				file = WFCOE_Exhaust_1_2,
+			}
+
+			area = GasTank,
+			category = nodisplay,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+
+			table install
+			{
+				test = ATATuning2.InstallTest.Tuning,
+				complete = ATATuning2.InstallComplete.Tuning,
+			}
+
+			table uninstall
+			{
+				test = ATATuning2.UninstallTest.Tuning,
+				complete = ATATuning2.UninstallComplete.Tuning,
+			}
+
+			lua
+			{
+				create = ATATuning2.Create.Tuning,
+				init = ATATuning2.Init.Tuning,
+			}
+		}
+
+		part WFCOEExhaustLeft2
+		{
+			model ExhaustLeftModel2
+			{
+				file = WFCOE_Exhaust_Left_2,
+			}
+
+			area = GasTank,
+			category = nodisplay,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+
+			table install
+			{
+				test = ATATuning2.InstallTest.Tuning,
+				complete = ATATuning2.InstallComplete.Tuning,
+			}
+
+			table uninstall
+			{
+				test = ATATuning2.UninstallTest.Tuning,
+				complete = ATATuning2.UninstallComplete.Tuning,
+			}
+
+			lua
+			{
+				create = ATATuning2.Create.Tuning,
+				init = ATATuning2.Init.Tuning,
+			}
+		}
+
+		part WFCOEExhaustRight2
+		{
+			model ExhaustRightModel2
+			{
+				file = WFCOE_Exhaust_Right_2,
+			}
+
+			area = GasTank,
+			category = nodisplay,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+
+			table install
+			{
+				test = ATATuning2.InstallTest.Tuning,
+				complete = ATATuning2.InstallComplete.Tuning,
+			}
+
+			table uninstall
+			{
+				test = ATATuning2.UninstallTest.Tuning,
+				complete = ATATuning2.UninstallComplete.Tuning,
+			}
+
+			lua
+			{
+				create = ATATuning2.Create.Tuning,
+				init = ATATuning2.Init.Tuning,
+			}
+		}
+
+		part WFCOEFendersFront
+		{
+			model FenderFrontModel
+			{
+				file = WFCOE_Fender_Front_1,
+			}
+
+			model FenderFrontModel2
+			{
+				file = WFCOE_Fender_Front_2,
+			}
+
+			area = TireRearLeft,
+			category = nodisplay,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+
+			table install
+			{
+				test = ATATuning2.InstallTest.Tuning,
+				complete = ATATuning2.InstallComplete.Tuning,
+			}
+
+			table uninstall
+			{
+				test = ATATuning2.UninstallTest.Tuning,
+				complete = ATATuning2.UninstallComplete.Tuning,
+			}
+
+			lua
+			{
+				create = ATATuning2.Create.Tuning,
+				init = ATATuning2.Init.Tuning,
+			}
+		}
+
+		part WFCOEFenderBig
+		{
+			model FenderBigModel
+			{
+				file = WFCOE_Fender_Big,
+			}
+
+			area = TireRearLeft,
+			category = nodisplay,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+
+			table install
+			{
+				test = ATATuning2.InstallTest.Tuning,
+				complete = ATATuning2.InstallComplete.Tuning,
+			}
+
+			table uninstall
+			{
+				test = ATATuning2.UninstallTest.Tuning,
+				complete = ATATuning2.UninstallComplete.Tuning,
+			}
+
+			lua
+			{
+				create = ATATuning2.Create.Tuning,
+				init = ATATuning2.Init.Tuning,
+			}
+		}
+
+		part WFCOEFenderRear
+		{
+			model FenderRearModel
+			{
+				file = WFCOE_Fender_Rear,
+			}
+
+			area = TireMiddleLeft,
+			category = nodisplay,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+
+			table install
+			{
+				test = ATATuning2.InstallTest.Tuning,
+				complete = ATATuning2.InstallComplete.Tuning,
+			}
+
+			table uninstall
+			{
+				test = ATATuning2.UninstallTest.Tuning,
+				complete = ATATuning2.UninstallComplete.Tuning,
+			}
+
+			lua
+			{
+				create = ATATuning2.Create.Tuning,
+				init = ATATuning2.Init.Tuning,
+			}
+		}
+
+		part WFCOEHandrail
+		{
+			model HandrailsModel
+			{
+				file = WFCOE_Handrails,
+			}
+
+			area = SeatFrontLeft,
+			category = nodisplay,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+
+			table install
+			{
+				test = ATATuning2.InstallTest.Tuning,
+				complete = ATATuning2.InstallComplete.Tuning,
+			}
+
+			table uninstall
+			{
+				test = ATATuning2.UninstallTest.Tuning,
+				complete = ATATuning2.UninstallComplete.Tuning,
+			}
+
+			lua
+			{
+				create = ATATuning2.Create.Tuning,
+				init = ATATuning2.Init.Tuning,
+			}
+		}
+
+		part WFCOEHorns
+		{
+			model HornsModel
+			{
+				file = WFCOE_Horns,
+			}
+
+			area = Engine,
+			category = nodisplay,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+
+			table install
+			{
+				test = ATATuning2.InstallTest.Tuning,
+				complete = ATATuning2.InstallComplete.Tuning,
+			}
+
+			table uninstall
+			{
+				test = ATATuning2.UninstallTest.Tuning,
+				complete = ATATuning2.UninstallComplete.Tuning,
+			}
+
+			lua
+			{
+				create = ATATuning2.Create.Tuning,
+				init = ATATuning2.Init.Tuning,
+			}
+		}
+
+		part WFCOEVisors
+		{
+			model VisorModel1
+			{
+				file = WFCOE_Visor1,
+			}
+
+			model VisorModel2
+			{
+				file = WFCOE_Visor2,
+			}
+
+			area = Engine,
+			category = nodisplay,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+
+			table install
+			{
+				test = ATATuning2.InstallTest.Tuning,
+				complete = ATATuning2.InstallComplete.Tuning,
+			}
+
+			table uninstall
+			{
+				test = ATATuning2.UninstallTest.Tuning,
+				complete = ATATuning2.UninstallComplete.Tuning,
+			}
+
+			lua
+			{
+				create = ATATuning2.Create.Tuning,
+				init = ATATuning2.Init.Tuning,
+			}
+		}
+
+		part WFCOELeftArmor
+		{
+			model LeftArmorModel
+			{
+				file = WFCOE_LeftArmor,
+			}
+
+			area = SeatFrontLeft,
+			category = nodisplay,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+
+			table install
+			{
+				test = ATATuning2.InstallTest.Tuning,
+				complete = ATATuning2.InstallComplete.Tuning,
+			}
+
+			table uninstall
+			{
+				test = ATATuning2.UninstallTest.Tuning,
+				complete = ATATuning2.UninstallComplete.Tuning,
+			}
+
+			lua
+			{
+				create = ATATuning2.Create.Tuning,
+				init = ATATuning2.Init.Tuning,
+			}
+		}
+
+		part WFCOERightArmor
+		{
+			model RightArmorModel
+			{
+				file = WFCOE_RightArmor,
+			}
+
+			area = SeatFrontRight,
+			category = nodisplay,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+
+			table install
+			{
+				test = ATATuning2.InstallTest.Tuning,
+				complete = ATATuning2.InstallComplete.Tuning,
+			}
+
+			table uninstall
+			{
+				test = ATATuning2.UninstallTest.Tuning,
+				complete = ATATuning2.UninstallComplete.Tuning,
+			}
+
+			lua
+			{
+				create = ATATuning2.Create.Tuning,
+				init = ATATuning2.Init.Tuning,
+			}
+		}
+
+		part WFCOERearLeftArmor
+		{
+			model RearLeftArmorModel
+			{
+				file = WFCOE_RearLeftArmor,
+			}
+
+			area = SeatFrontRight,
+			category = nodisplay,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+
+			table install
+			{
+				test = ATATuning2.InstallTest.Tuning,
+				complete = ATATuning2.InstallComplete.Tuning,
+			}
+
+			table uninstall
+			{
+				test = ATATuning2.UninstallTest.Tuning,
+				complete = ATATuning2.UninstallComplete.Tuning,
+			}
+
+			lua
+			{
+				create = ATATuning2.Create.Tuning,
+				init = ATATuning2.Init.Tuning,
+			}
+		}
+
+		part WFCOERearRightArmor
+		{
+			model RearRightArmorModel
+			{
+				file = WFCOE_RearRightArmor,
+			}
+
+			area = SeatFrontRight,
+			category = nodisplay,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+
+			table install
+			{
+				test = ATATuning2.InstallTest.Tuning,
+				complete = ATATuning2.InstallComplete.Tuning,
+			}
+
+			table uninstall
+			{
+				test = ATATuning2.UninstallTest.Tuning,
+				complete = ATATuning2.UninstallComplete.Tuning,
+			}
+
+			lua
+			{
+				create = ATATuning2.Create.Tuning,
+				init = ATATuning2.Init.Tuning,
+			}
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 0.0000 -1.2964,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.0650 1.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+
+		attachment trailerTruck
+		{
+			offset = 0.0000 0.1567 -0.8133,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+}
