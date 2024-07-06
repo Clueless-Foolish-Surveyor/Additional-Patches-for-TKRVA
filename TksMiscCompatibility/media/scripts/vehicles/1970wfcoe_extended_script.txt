@@ -382,7 +382,7 @@ module Base
 		centerOfMassOffset = 0.0000 -0.0857 0.0000,
 		shadowExtents = 0.7801 2.4947,
 		shadowOffset = 0.0000 0.0000,
-		mass = 1325,
+		mass = 1430,
 		engineForce = 3500,
 		maxSpeed = 60f,
 		engineLoudness = 100,

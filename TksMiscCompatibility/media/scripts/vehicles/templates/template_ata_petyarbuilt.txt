@@ -253,7 +253,7 @@ module Base
             ignitionFail = VehicleIgnitionFailStepVan,
         }
         
-        mass = 1328,
+        mass = 1460,
         engineForce = 4250,
         engineQuality = 100,
         engineLoudness = 120,
